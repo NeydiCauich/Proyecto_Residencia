@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+:root{
+  --azulito:#f1f6fc;
+  --azul:#3057e4;
+  --azul2:#0C5ADB;
+  --azulfuerte:#020873;
+  --azuliconos:#0037ff;
+  --tipograpoppins: 'Poppins', sans-serif;
+  --tipografimontse: 'Montserrat', sans-serif;
+  --tipografianunito:'Nunito', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size:16px;
+  line-height:24px;
+  color:#333;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+header{
+  margin: 0px;
+ position:fixed;
+ z-index:100;
+ width:100%;
+text-align: center;
+background-color: #ffffff;
+}
+.cont_arriba{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  flex-direction: row;
+}
+
+.logo figure{
+  width:150px;
+  margin:5px;
+}
+.logo figure img{
+  width:100%;
+  height:100%;
+}
+
+.contenedor_cabecera{
+  margin:0;
+  
+}
+
+#iconomenu{
+  color:#ff8800;
+  padding: 15px;
+  font-size:35px;
+  display: none;
+
+}
+.nav{
+	margin: auto;
+	font-size: 20px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+  background-color:var(--azul2);
+  width:900px;
+}
+.menu-horizontal  li  a{
+	display: block;
+	padding: 15px 20px;
+	color:white;
+	text-decoration: none;
+
+}
+.menu-horizontal  li:hover{
+	background-color:var(--azulfuerte);
+
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+  z-index: 3;
+	list-style: none;
+	width: 200px;
+	background-color: rgb(0, 14, 51);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: rgb(0, 26, 255);
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+.slide_fotos{
+  background-image: url(imagenes/coffee-1276784.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;/*llenar el contenedor*/
+  height:500px;
+  background-position: 0px 0px;
+  position: relative;
+  }
+  .informacion{
+  height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    width: 500px;
+    position: absolute;
+    z-index: 2;
+    left:0px;
+    top: 0px;
+    right: 0px;
+    bottom:0;
+  }
+  .informacion h2{
+    font-family: var(--tipograpoppins);
+  text-align: center;
+  color: whitesmoke;
+  font-size: 40px;
+  }
+  .informacion p{
+    font-size:20px;
+    text-align: center;
+    max-width: 500px;
+    line-height:30px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: var(--tipografianunito);
+  
+  }
+
+
+.texto{
+  color: #550000;
+  font-size: 16px;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.ubicanos{
+  width:40%;
+  background-color:#2f56e4dc;
+  backdrop-filter: blur(8px);
+  padding-top:150px;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding:50px;
+}
+
+.ubi{
+color: #ffffff;
+}
+
+.redesociales{
+  margin-top:60px;
+}
+
+.fondocolor{
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 80px;
+  background-color: #f0f0f0;
+}
+
+.cover{
+  background-image:url(images/hand-1076597.jpg);
+  width: auto;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  margin:auto;
+}
+
+.marg{
+  margin: auto;
+  padding-top: 30px;
+}
+
+.vacante{
+  background-color: #ffffffd2;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 5px #c3d0ff;
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+.btn_send{
+  background-color:var(--azulfuerte);
+  color:white;
+  text-decoration: none;
+  padding:10px 15px;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+.btn_send:hover{
+  background-color:var(--azul2)
+
+}

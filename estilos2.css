@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+:root{
+  --azulito:#f1f6fc;
+  --azul:#3057e4;
+  --azul2:#0C5ADB;
+  --azulfuerte:#020873;
+  --azuliconos:#0037ff;
+  --tipograpoppins: 'Poppins', sans-serif;
+  --tipografimontse: 'Montserrat', sans-serif;
+  --tipografianunito:'Nunito', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  background-image:url(imagenes/slide1.jpg);
+  padding: 80px;
+  background-repeat: no-repeat;
+  background-color: #2f56e4;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.ancho {
+  width: 1200px;
+  margin: auto;
+  align-items:center;
+}
+header{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction: row;
+}
+.cont_arriba{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  flex-direction: row;
+  border:1px rgb(102, 255, 0) solid;
+}
+
+.logo figure{
+  width:150px;
+  margin:5px;
+}
+.logo figure img{
+  width:100%;
+  height:100%;
+}
+
+.contenedor_cabecera{
+  border:2px rgb(221, 255, 0) solid;
+  margin:0;
+}
+
+#iconomenu{
+  color:#ff8800;
+  padding: 15px;
+  font-size:35px;
+  display: none;
+
+}
+.nav{
+	margin: auto;
+	font-size: 20px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+  BORDER:1px red solid;
+  background-color:var(--azul);
+  width:900px;
+}
+.menu-horizontal  li  a{
+	display: block;
+	padding: 15px 20px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+.menu-horizontal  li:hover{
+	background-color:var(--azulfuerte);
+
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+  z-index: 3;
+	list-style: none;
+	width: 200px;
+	background-color: rgb(0, 14, 51);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: rgb(0, 26, 255);
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+
+
+
+
+.cont{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+.formulario {
+  background-color: #ffffffd2;
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  width: 300px;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 25px;
+  color: #2f56e4;
+}
+
+
+.entrada{
+    border: none;
+    width: 200px;
+    padding: 10px;
+    margin: 5px; 
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.entrada:hover{
+    box-shadow: 0px 0px 10px 1px #2f56e4;
+}
+
+.btn_send{
+    width: 150px;
+    padding: 15px;
+    margin-top: 50px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration:none;
+    background-color: #2f56e4;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+.btn_send:hover{
+  background-color:  #ff7799;
+}
+
+
+.form{
+  margin-top:70px;
+  padding:20px;
+}
+
+.derecha{
+    color: #ffffff;
+    width:50%;
+    height:auto;
+    text-align: center;
+}
+
+#icon{
+    margin-top: 20px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+a{
+  text-decoration: none;
+}
+
+.txt_azul{
+  color:#2f56e4
+}
+
+#seccionContacto{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  background-image: url(images/hand-1076597.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.contacto{
+background-color:#0000008f;
+backdrop-filter: blur(8px);
+padding-top:150px;
+padding-left: 20px;
+margin:auto;
+width:60%;
+height:400px;
+}
+
+.texto{
+  color: #ffffff;
+  font-size: 16px;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.ubicanos{
+  width:40%;
+  background-color:#2f56e4dc;
+  backdrop-filter: blur(8px);
+  padding-top:150px;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ubi{
+color: #ffffff;
+}
+
+.redesociales{
+  margin-top:60px;
+}
+
+.fondocolor{
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 80px;
+  background-color: #f0f0f0;
+}
